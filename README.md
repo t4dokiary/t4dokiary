@@ -14,6 +14,37 @@
 - Sitio web personal [enlace](https://t4dokiary.github.io/about/).
 - Actualmente disponible para una pasantía o una nueva oportunidad laboral, para aprender y crecer en el campo de la tecnología.
 
+``` python
+class T4dokiary:
+    def __init__(self):
+        self.name = "Luis Francisco"
+        self.username = "t4dokiary"
+        self.location = "Tlaxcala, México"
+        self.web = "https://t4dokiary.github.io/about/"
+        self.email = {"gmail": "luis.matlalcuatzi@gmail.com",
+                      "hotmail": "luis.matlalcuatzi@hotmail.com"}
+        self.redes_sociales = {"linkedin": "https://www.linkedin.com/in/luis-francisco-matlalcuatzi-gonzalez/", 
+                               "twitter": "https://twitter.com/TadokiaryKazuto", 
+                               "facebook": "https://www.facebook.com/whiichito", 
+                               "instagram": "https://www.instagram.com/wichito_fmg/"}
+
+    def __str__(self):
+        redes_sociales_str = "\n".join([f"{red}: {url}" for red, url in self.redes_sociales.items()])
+        return (f"Nombre: {self.name}\n"
+                f"Ubicación: {self.location}\n"
+                f"Web: {self.web}\n"
+                f"Contacto Gmail: {self.email['gmail']}\n"
+                f"Contacto Hotmail: {self.email['hotmail']}\n"
+                + redes_sociales_str)
+
+if __name__ == '__main__':
+    me = T4dokiary()
+    print(me)
+
+```
+
+
+
 <!-- Sección 'Habilidades' -->
 ## <img src="assets/mdImages/coding.webp" width ="35"><b> Habilidades</b>
 
